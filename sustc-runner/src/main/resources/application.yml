@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sustc  # change this to your own jdbc url
+    username: bilibili  # change this to your own username (avoid using a superuser)
+    password: 123456  # change this to your own password
+#      #池中连接关闭后的最长生命周期
+#    max-lifetime: 60000
+#      #最大池大小
+#    maximum-pool-size: 30
+
+
+logging:
+  level:
+    root: off
+    io.sustc: debug
+
+---
+
+benchmark:
+  data-path: D:\MyProject\DB NO2\sustc-main\sustc-runner\data
+  student-mode: true
